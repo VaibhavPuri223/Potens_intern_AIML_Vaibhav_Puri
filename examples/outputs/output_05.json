@@ -2,8 +2,8 @@
   "category": "Complaint & Escalation",
   "priority": "P0",
   "next_tool": "none",
-  "reasoning": "The customer is an enterprise customer who has experienced three service downtimes this month and is threatening to cancel. The kb_lookup function found a known issue related to regional outages, and the similar_ticket_search function found a recurring pattern of similar complaints. The customer's issue matches the known issue and the recurring pattern, indicating a high-priority complaint and escalation issue.",
-  "why": "The customer is experiencing repeated service downtimes and is threatening to cancel, which is a high-priority issue that requires immediate attention. The known issue and recurring pattern detected by the tools support this classification.",
+  "reasoning": "The customer is experiencing recurring service downtime, which is a critical issue. The kb_lookup found a known issue related to regional outages, and the similar_ticket_search revealed a recurring pattern of complaints about service downtime. This pattern has been flagged and escalated to the reliability team and account manager in the past. Given the customer's threat to cancel and the enterprise tier, this issue is classified as a P0 priority.",
+  "why": "The customer is experiencing a critical issue with recurring service downtime, which is affecting their business. The fact that this is the third time this month and the customer is threatening to cancel indicates a high level of urgency and priority. The known issue and recurring pattern detected by the tools support this classification.",
   "confidence": 0.95,
   "trace": [
     {
@@ -71,7 +71,7 @@
     },
     {
       "step": 3,
-      "thought": "{\n  \"category\": \"Complaint & Escalation\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is an enterprise customer who has experienced three service downtimes this month and is threatening to cancel. The kb_lookup function found a known issue related to regional outages, and the similar_ticket_search function found a recurring pattern of similar complaints. The customer's issue matches the known issue and the recurring pattern, indicating a high-priority complaint and escalation issue.\",\n  \"why\": \"The customer is experiencing repeated service downtimes and is threatening to cancel, which is a high-priority issue that requires immediate attention. The known issue and recurring pattern detected by the tools support this classification.\",\n  \"confidence\": 0.95\n}",
+      "thought": "{\n  \"category\": \"Complaint & Escalation\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is experiencing recurring service downtime, which is a critical issue. The kb_lookup found a known issue related to regional outages, and the similar_ticket_search revealed a recurring pattern of complaints about service downtime. This pattern has been flagged and escalated to the reliability team and account manager in the past. Given the customer's threat to cancel and the enterprise tier, this issue is classified as a P0 priority.\",\n  \"why\": \"The customer is experiencing a critical issue with recurring service downtime, which is affecting their business. The fact that this is the third time this month and the customer is threatening to cancel indicates a high level of urgency and priority. The known issue and recurring pattern detected by the tools support this classification.\",\n  \"confidence\": 0.95\n}",
       "tool_call": null,
       "tool_result": null
     }

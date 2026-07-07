@@ -2,9 +2,9 @@
   "category": "Technical Issue",
   "priority": "P0",
   "next_tool": "none",
-  "reasoning": "The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. The similar_ticket_search function found no similar tickets, which suggests that this is not a recurring issue. However, given the severity of the issue and the customer's enterprise tier, I have classified this as a P0 technical issue.",
-  "why": "The customer's production data seems to have disappeared after the last update, which is a critical issue that requires immediate attention. The customer is an enterprise customer, which means that they are a high-priority customer who requires a high level of support.",
-  "confidence": 0.95,
+  "reasoning": "The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. However, given the customer's enterprise tier and the urgency of the situation, I have classified this as a P0 technical issue. The similar_ticket_search function did not find any directly relevant matches, but the presence of any recurring patterns suggests that this issue should be treated with high priority.",
+  "why": "The customer's production data is missing, which is a critical issue that needs to be resolved immediately. The customer is an enterprise customer, which means that they are a high-value customer who requires prompt attention to their issues. The kb_lookup function found a known issue that matches this description, but I have still classified this as a P0 technical issue due to the urgency and severity of the situation.",
+  "confidence": 0.9,
   "trace": [
     {
       "step": 1,
@@ -78,7 +78,7 @@
     },
     {
       "step": 3,
-      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. The similar_ticket_search function found no similar tickets, which suggests that this is not a recurring issue. However, given the severity of the issue and the customer's enterprise tier, I have classified this as a P0 technical issue.\",\n  \"why\": \"The customer's production data seems to have disappeared after the last update, which is a critical issue that requires immediate attention. The customer is an enterprise customer, which means that they are a high-priority customer who requires a high level of support.\",\n  \"confidence\": 0.95\n}",
+      "thought": "{\"category\": \"Technical Issue\", \"priority\": \"P0\", \"next_tool\": \"none\", \"reasoning\": \"The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. However, given the customer's enterprise tier and the urgency of the situation, I have classified this as a P0 technical issue. The similar_ticket_search function did not find any directly relevant matches, but the presence of any recurring patterns suggests that this issue should be treated with high priority.\", \"why\": \"The customer's production data is missing, which is a critical issue that needs to be resolved immediately. The customer is an enterprise customer, which means that they are a high-value customer who requires prompt attention to their issues. The kb_lookup function found a known issue that matches this description, but I have still classified this as a P0 technical issue due to the urgency and severity of the situation.\", \"confidence\": 0.9}",
       "tool_call": null,
       "tool_result": null
     }

@@ -1,9 +1,9 @@
 {
   "category": "Feature Request",
-  "priority": "P2",
+  "priority": "P1",
   "next_tool": "none",
-  "reasoning": "The customer is requesting a new feature, which is a bulk export for compliance reporting. The kb_lookup did not find any matching known issues, and the similar_ticket_search found two somewhat related tickets but not exactly the same request. The customer is an enterprise customer, but since this is a feature request, it's not as high priority as other issues like outages or billing errors.",
-  "why": "The customer is asking for a new feature to help with compliance reporting, which is a common request from large organizations. While we don't currently have this feature on the roadmap, we should consider it for future development. In the meantime, we'll follow up with the customer within 1-2 business days to let them know we've received their request.",
+  "reasoning": "The customer is requesting a bulk export feature for compliance reporting. The kb_lookup function did not find a matching known issue in the knowledge base. The similar_ticket_search function found two similar tickets, one related to billing and the other related to a technical issue with exporting. However, these tickets are not directly related to the customer's request. Given the customer's enterprise tier and the fact that this is a feature request, I have prioritized this as P1.",
+  "why": "The customer is an enterprise customer and is requesting a feature that is not currently available. This feature is important for compliance reporting, which is a critical aspect of their business. Therefore, it is essential to prioritize this request and respond promptly to ensure that the customer's needs are met.",
   "confidence": 0.8,
   "trace": [
     {
@@ -53,22 +53,22 @@
     },
     {
       "step": 2,
-      "thought": "Decided to call draft_acknowledgment with {'category': 'Feature Request', 'customer_name': 'Enterprise Customer', 'priority': 'P2'}",
+      "thought": "Decided to call draft_acknowledgment with {'category': 'Feature Request', 'customer_name': 'Enterprise Customer', 'priority': 'P1'}",
       "tool_call": {
         "name": "draft_acknowledgment",
         "arguments": {
           "category": "Feature Request",
           "customer_name": "Enterprise Customer",
-          "priority": "P2"
+          "priority": "P1"
         }
       },
       "tool_result": {
-        "draft": "Hi Enterprise Customer, thanks for reaching out about your feature request issue. We've logged this and will follow up within 1-2 business days. If anything changes on your end in the meantime, just reply to this thread."
+        "draft": "Hi Enterprise Customer, thanks for reaching out about your feature request issue. We've prioritized this and will follow up within 4-8 hours. If anything changes on your end in the meantime, just reply to this thread."
       }
     },
     {
       "step": 3,
-      "thought": "{\n  \"category\": \"Feature Request\",\n  \"priority\": \"P2\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is requesting a new feature, which is a bulk export for compliance reporting. The kb_lookup did not find any matching known issues, and the similar_ticket_search found two somewhat related tickets but not exactly the same request. The customer is an enterprise customer, but since this is a feature request, it's not as high priority as other issues like outages or billing errors.\",\n  \"why\": \"The customer is asking for a new feature to help with compliance reporting, which is a common request from large organizations. While we don't currently have this feature on the roadmap, we should consider it for future development. In the meantime, we'll follow up with the customer within 1-2 business days to let them know we've received their request.\",\n  \"confidence\": 0.8\n}",
+      "thought": "{\n  \"category\": \"Feature Request\",\n  \"priority\": \"P1\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is requesting a bulk export feature for compliance reporting. The kb_lookup function did not find a matching known issue in the knowledge base. The similar_ticket_search function found two similar tickets, one related to billing and the other related to a technical issue with exporting. However, these tickets are not directly related to the customer's request. Given the customer's enterprise tier and the fact that this is a feature request, I have prioritized this as P1.\",\n  \"why\": \"The customer is an enterprise customer and is requesting a feature that is not currently available. This feature is important for compliance reporting, which is a critical aspect of their business. Therefore, it is essential to prioritize this request and respond promptly to ensure that the customer's needs are met.\",\n  \"confidence\": 0.8\n}",
       "tool_call": null,
       "tool_result": null
     }

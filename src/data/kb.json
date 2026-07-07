@@ -1,7 +1,44 @@
-{
-  "categories": [
-    "login",
-    "billing",
-    "bug"
-  ]
-}
+[
+  {
+    "id": "KB-001",
+    "issue": "Duplicate subscription charge due to billing sync retry bug",
+    "keywords": ["charged twice", "double charged", "duplicate charge", "charged again"],
+    "fix": "Verify the two charges in the billing dashboard, refund the duplicate, and note the customer's account for the known sync-retry bug (ticket ENG-4471).",
+    "is_outage": false
+  },
+  {
+    "id": "KB-002",
+    "issue": "Export/report generation crash on large datasets",
+    "keywords": ["export crash", "crashes when i export", "crashes every time i try to export", "report export fails"],
+    "fix": "Known issue with exports over 50k rows (ENG-4502, unresolved). Ask customer to filter date range and export in smaller batches as a workaround.",
+    "is_outage": false
+  },
+  {
+    "id": "KB-003",
+    "issue": "Password reset not taking effect due to CDN cache",
+    "keywords": ["password wrong after reset", "reset password not working", "can't log in after reset"],
+    "fix": "Have the customer clear browser cache or use incognito; the auth CDN cache TTL is being reduced in the next release (ENG-4388).",
+    "is_outage": false
+  },
+  {
+    "id": "KB-004",
+    "issue": "Regional outage affecting checkout and API endpoints",
+    "keywords": ["500 error", "checkout error", "service down", "site is down", "can't access"],
+    "fix": "Check current status page first. If matches active incident, link the status page and set expectation based on incident ETA rather than standard SLA.",
+    "is_outage": true
+  },
+  {
+    "id": "KB-005",
+    "issue": "Account auto-lock after failed login threshold",
+    "keywords": ["account locked", "account got locked", "locked out"],
+    "fix": "Accounts auto-lock after 5 failed attempts within 10 minutes. Verify identity, then manually unlock via admin panel.",
+    "is_outage": false
+  },
+  {
+    "id": "KB-006",
+    "issue": "Data not missing, hidden by a client-side filter after last release",
+    "keywords": ["data disappeared", "data missing", "records gone", "lost my data"],
+    "fix": "Recent release changed default filters on the dashboard. Data is very rarely actually deleted -- check filter/date-range settings before assuming data loss.",
+    "is_outage": false
+  }
+]

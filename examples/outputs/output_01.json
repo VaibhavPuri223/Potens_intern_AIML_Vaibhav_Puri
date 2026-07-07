@@ -2,8 +2,8 @@
   "category": "Billing",
   "priority": "P1",
   "next_tool": "none",
-  "reasoning": "The ticket matches a known pattern of double billing, and while there is no exact match in the knowledge base, a similar ticket search revealed a past instance of the same issue being resolved as a P1 priority. The customer is requesting a refund for the duplicate charge, which aligns with the Billing category.",
-  "why": "The customer was charged twice for their subscription and is requesting a refund for the duplicate charge. This is a billing issue that needs to be addressed promptly, as it affects the customer's trust in the company's billing system and could lead to churn if not resolved quickly.",
+  "reasoning": "The customer's issue is related to being charged twice for their subscription, which is a billing issue. The knowledge base search did not find a matching known issue, but the similar ticket search found a match with a previous ticket that was resolved with a refund. Based on this information, I have determined that the category is Billing and the priority is P1.",
+  "why": "The customer was charged twice for their subscription and is requesting a refund. This is a billing issue that needs to be addressed promptly, so I have categorized it as Billing and prioritized it as P1.",
   "confidence": 0.8,
   "trace": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "step": 4,
-      "thought": "{\n  \"category\": \"Billing\",\n  \"priority\": \"P1\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The ticket matches a known pattern of double billing, and while there is no exact match in the knowledge base, a similar ticket search revealed a past instance of the same issue being resolved as a P1 priority. The customer is requesting a refund for the duplicate charge, which aligns with the Billing category.\",\n  \"why\": \"The customer was charged twice for their subscription and is requesting a refund for the duplicate charge. This is a billing issue that needs to be addressed promptly, as it affects the customer's trust in the company's billing system and could lead to churn if not resolved quickly.\",\n  \"confidence\": 0.8\n}",
+      "thought": "{\n  \"category\": \"Billing\",\n  \"priority\": \"P1\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer's issue is related to being charged twice for their subscription, which is a billing issue. The knowledge base search did not find a matching known issue, but the similar ticket search found a match with a previous ticket that was resolved with a refund. Based on this information, I have determined that the category is Billing and the priority is P1.\",\n  \"why\": \"The customer was charged twice for their subscription and is requesting a refund. This is a billing issue that needs to be addressed promptly, so I have categorized it as Billing and prioritized it as P1.\",\n  \"confidence\": 0.8\n}",
       "tool_call": null,
       "tool_result": null
     }

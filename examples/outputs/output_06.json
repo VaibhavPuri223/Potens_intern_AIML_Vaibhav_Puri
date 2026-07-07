@@ -2,8 +2,8 @@
   "category": "Billing",
   "priority": "P2",
   "next_tool": "none",
-  "reasoning": "The ticket is about changing the billing address on file. The knowledge base search did not return any matching known issues. The similar ticket search found a match with a low priority resolution, which suggests that this is a general inquiry that can be resolved by pointing the customer to the account settings. The customer is on the pro tier, but this is not an urgent issue, so P2 priority is appropriate.",
-  "why": "The customer needs help with updating their billing address, which is a common and relatively simple task. The system has been able to provide a clear path forward, and the customer can expect a response within 1-2 business days.",
+  "reasoning": "The customer is asking how to change their billing address on file. The knowledge base search did not return any matching known issues. The similar ticket search found a match with a resolution that pointed the customer to account settings > billing, which was resolved the same day. Based on this information, I have categorized the ticket as Billing and prioritized it as P2, as it is a general question that can be resolved by pointing the customer to the relevant account settings.",
+  "why": "The customer needs help with updating their billing address, which is a common and relatively simple task that can be resolved by pointing them to the relevant account settings. The similar ticket search found a match with a resolution that was able to resolve the issue the same day, which suggests that this issue can be resolved quickly and easily.",
   "confidence": 0.8,
   "trace": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "step": 4,
-      "thought": "{\n  \"category\": \"Billing\",\n  \"priority\": \"P2\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The ticket is about changing the billing address on file. The knowledge base search did not return any matching known issues. The similar ticket search found a match with a low priority resolution, which suggests that this is a general inquiry that can be resolved by pointing the customer to the account settings. The customer is on the pro tier, but this is not an urgent issue, so P2 priority is appropriate.\",\n  \"why\": \"The customer needs help with updating their billing address, which is a common and relatively simple task. The system has been able to provide a clear path forward, and the customer can expect a response within 1-2 business days.\",\n  \"confidence\": 0.8\n}",
+      "thought": "{\n  \"category\": \"Billing\",\n  \"priority\": \"P2\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is asking how to change their billing address on file. The knowledge base search did not return any matching known issues. The similar ticket search found a match with a resolution that pointed the customer to account settings > billing, which was resolved the same day. Based on this information, I have categorized the ticket as Billing and prioritized it as P2, as it is a general question that can be resolved by pointing the customer to the relevant account settings.\",\n  \"why\": \"The customer needs help with updating their billing address, which is a common and relatively simple task that can be resolved by pointing them to the relevant account settings. The similar ticket search found a match with a resolution that was able to resolve the issue the same day, which suggests that this issue can be resolved quickly and easily.\",\n  \"confidence\": 0.8\n}",
       "tool_call": null,
       "tool_result": null
     }

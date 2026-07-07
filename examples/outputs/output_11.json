@@ -2,8 +2,8 @@
   "category": "Technical Issue",
   "priority": "P2",
   "next_tool": "human_escalation",
-  "reasoning": "The customer's issue description is unclear, and no matching known issue or recurring pattern was found in the knowledge base or past resolved tickets. Therefore, the ticket is escalated to a human reviewer for further investigation.",
-  "why": "The customer's issue description is too vague to determine the cause of the problem, and no similar issues have been reported before. A human reviewer is needed to ask follow-up questions and gather more information to properly categorize and prioritize the issue.",
+  "reasoning": "The customer's issue description is unclear, and no matching known issue or recurring pattern was found. The issue is likely a technical problem, but more information is needed to determine the cause and appropriate response. The customer is on a free tier and the issue is not critical, so it's been escalated to a human reviewer for further investigation.",
+  "why": "The customer's issue description is unclear, and no matching known issue or recurring pattern was found, so the issue has been escalated to a human reviewer for further investigation.",
   "confidence": 0.4,
   "trace": [
     {
@@ -21,7 +21,7 @@
       }
     },
     {
-      "step": 1,
+      "step": 2,
       "thought": "Decided to call similar_ticket_search with {'query': 'thing broken', 'top_k': 3}",
       "tool_call": {
         "name": "similar_ticket_search",
@@ -37,25 +37,25 @@
       }
     },
     {
-      "step": 2,
-      "thought": "Decided to call human_escalation with {'reason': 'Unclear issue description and no matching known issue or recurring pattern found', 'ticket_summary': 'thing broken idk what happened'}",
+      "step": 3,
+      "thought": "Decided to call human_escalation with {'reason': 'Unclear issue description and no matching known issue or recurring pattern found', 'ticket_summary': 'Customer reports something is broken, but the issue is unclear'}",
       "tool_call": {
         "name": "human_escalation",
         "arguments": {
           "reason": "Unclear issue description and no matching known issue or recurring pattern found",
-          "ticket_summary": "thing broken idk what happened"
+          "ticket_summary": "Customer reports something is broken, but the issue is unclear"
         }
       },
       "tool_result": {
         "status": "queued_for_human_review",
         "escalation_id": "ESC-0001",
         "reason": "Unclear issue description and no matching known issue or recurring pattern found",
-        "ticket_summary": "thing broken idk what happened"
+        "ticket_summary": "Customer reports something is broken, but the issue is unclear"
       }
     },
     {
-      "step": 3,
-      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P2\",\n  \"next_tool\": \"human_escalation\",\n  \"reasoning\": \"The customer's issue description is unclear, and no matching known issue or recurring pattern was found in the knowledge base or past resolved tickets. Therefore, the ticket is escalated to a human reviewer for further investigation.\",\n  \"why\": \"The customer's issue description is too vague to determine the cause of the problem, and no similar issues have been reported before. A human reviewer is needed to ask follow-up questions and gather more information to properly categorize and prioritize the issue.\",\n  \"confidence\": 0.4\n}",
+      "step": 4,
+      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P2\",\n  \"next_tool\": \"human_escalation\",\n  \"reasoning\": \"The customer's issue description is unclear, and no matching known issue or recurring pattern was found. The issue is likely a technical problem, but more information is needed to determine the cause and appropriate response. The customer is on a free tier and the issue is not critical, so it's been escalated to a human reviewer for further investigation.\",\n  \"why\": \"The customer's issue description is unclear, and no matching known issue or recurring pattern was found, so the issue has been escalated to a human reviewer for further investigation.\",\n  \"confidence\": 0.4\n}",
       "tool_call": null,
       "tool_result": null
     }

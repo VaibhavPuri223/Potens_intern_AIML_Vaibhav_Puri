@@ -1,7 +1,58 @@
 [
   {
-    "id": "ticket-1",
-    "text": "Cannot reset password",
-    "category": "login"
+    "id": "T-1001",
+    "text": "billed twice for my monthly plan please refund the extra charge",
+    "category": "Billing",
+    "priority": "P1",
+    "resolution": "Refunded duplicate charge within 24 hours, root cause was billing sync retry bug."
+  },
+  {
+    "id": "T-1002",
+    "text": "export keeps crashing when i try to download the full report",
+    "category": "Technical Issue",
+    "priority": "P1",
+    "resolution": "Advised smaller date range export as workaround, escalated to engineering."
+  },
+  {
+    "id": "T-1003",
+    "text": "outage again third time this month service down and i am considering cancelling",
+    "category": "Complaint & Escalation",
+    "priority": "P0",
+    "resolution": "Escalated directly to account manager, offered service credit, retained customer."
+  },
+  {
+    "id": "T-1004",
+    "text": "our service went down again this is the third outage this month",
+    "category": "Complaint & Escalation",
+    "priority": "P0",
+    "resolution": "Pattern flagged, escalated to reliability team and account manager."
+  },
+  {
+    "id": "T-1005",
+    "text": "checkout page giving 500 error since this morning cannot complete purchase",
+    "category": "Technical Issue",
+    "priority": "P0",
+    "resolution": "Matched active incident on status page, linked customer to incident tracker."
+  },
+  {
+    "id": "T-1006",
+    "text": "how do i update my billing address on file",
+    "category": "General Inquiry",
+    "priority": "P2",
+    "resolution": "Pointed customer to account settings > billing, resolved same day."
+  },
+  {
+    "id": "T-1007",
+    "text": "account locked after too many login attempts need urgent access",
+    "category": "Account & Access",
+    "priority": "P1",
+    "resolution": "Verified identity, manually unlocked account."
+  },
+  {
+    "id": "T-1008",
+    "text": "would love to see dark mode added to the app in a future update",
+    "category": "Feature Request",
+    "priority": "P2",
+    "resolution": "Logged in product backlog, no ETA committed."
   }
 ]

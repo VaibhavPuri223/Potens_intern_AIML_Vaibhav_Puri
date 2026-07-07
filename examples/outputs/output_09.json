@@ -2,9 +2,9 @@
   "category": "Technical Issue",
   "priority": "P0",
   "next_tool": "none",
-  "reasoning": "The customer is experiencing a 500 error on the checkout page, which is a critical issue. The kb_lookup function found a known issue matching the ticket, which is a regional outage affecting checkout and API endpoints. The similar_ticket_search function also found a recurring pattern of similar complaints, which suggests that this is a high-priority issue. Based on this information, I have classified the ticket as a Technical Issue with a priority of P0.",
-  "why": "The customer is experiencing a critical issue that is preventing them from completing purchases, which is a high-priority problem that needs to be resolved quickly. The known issue and recurring pattern detected by the tools suggest that this is a widespread problem that requires immediate attention.",
-  "confidence": 0.9,
+  "reasoning": "The customer is experiencing a 500 error on the checkout page, which matches a known issue in the knowledge base (KB-004) and is also a recurring pattern detected by similar_ticket_search. The suggested fix from the knowledge base is to check the current status page first and link the status page if it matches an active incident. Given the severity of the issue and its impact on the customer's ability to complete purchases, it is classified as a P0 priority.",
+  "why": "The customer is experiencing a critical issue that is preventing them from completing purchases, which is a high-priority problem that requires immediate attention. The fact that it matches a known issue and is a recurring pattern suggests that it is a serious problem that needs to be addressed quickly.",
+  "confidence": 0.95,
   "trace": [
     {
       "step": 1,
@@ -71,7 +71,7 @@
     },
     {
       "step": 3,
-      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is experiencing a 500 error on the checkout page, which is a critical issue. The kb_lookup function found a known issue matching the ticket, which is a regional outage affecting checkout and API endpoints. The similar_ticket_search function also found a recurring pattern of similar complaints, which suggests that this is a high-priority issue. Based on this information, I have classified the ticket as a Technical Issue with a priority of P0.\",\n  \"why\": \"The customer is experiencing a critical issue that is preventing them from completing purchases, which is a high-priority problem that needs to be resolved quickly. The known issue and recurring pattern detected by the tools suggest that this is a widespread problem that requires immediate attention.\",\n  \"confidence\": 0.9\n}",
+      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is experiencing a 500 error on the checkout page, which matches a known issue in the knowledge base (KB-004) and is also a recurring pattern detected by similar_ticket_search. The suggested fix from the knowledge base is to check the current status page first and link the status page if it matches an active incident. Given the severity of the issue and its impact on the customer's ability to complete purchases, it is classified as a P0 priority.\",\n  \"why\": \"The customer is experiencing a critical issue that is preventing them from completing purchases, which is a high-priority problem that requires immediate attention. The fact that it matches a known issue and is a recurring pattern suggests that it is a serious problem that needs to be addressed quickly.\",\n  \"confidence\": 0.95\n}",
       "tool_call": null,
       "tool_result": null
     }
