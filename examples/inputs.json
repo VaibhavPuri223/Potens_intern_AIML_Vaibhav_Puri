@@ -1,6 +1,14 @@
 [
-  {
-    "id": "example-1",
-    "text": "Customer cannot log in to the app."
-  }
+  {"id": 1, "text": "I was charged twice for my subscription this month, please refund one.", "metadata": {"customer_tier": "pro", "channel": "email"}},
+  {"id": 2, "text": "The app crashes every time I try to export a report. This is blocking my whole team.", "metadata": {"customer_tier": "enterprise", "channel": "chat"}},
+  {"id": 3, "text": "I can't log in, it says my password is wrong even after I reset it.", "metadata": {"customer_tier": "free", "channel": "email"}},
+  {"id": 4, "text": "Could you add dark mode to the mobile app? Would really help at night.", "metadata": {"customer_tier": "free", "channel": "chat"}},
+  {"id": 5, "text": "This is the third time this month your service has gone down. I'm cancelling if this happens again.", "metadata": {"customer_tier": "enterprise", "channel": "email"}},
+  {"id": 6, "text": "How do I change my billing address on file?", "metadata": {"customer_tier": "pro", "channel": "chat"}},
+  {"id": 7, "text": "URGENT: our production data seems to have disappeared after the last update! We need this fixed immediately.", "metadata": {"customer_tier": "enterprise", "channel": "email"}},
+  {"id": 8, "text": "Just wanted to say the new dashboard looks great, nice work team.", "metadata": {"customer_tier": "pro", "channel": "twitter"}},
+  {"id": 9, "text": "Getting a 500 error on the checkout page since this morning, can't complete any purchases.", "metadata": {"customer_tier": "pro", "channel": "chat"}},
+  {"id": 10, "text": "My account got locked and I have no idea why, I need access today for a client demo.", "metadata": {"customer_tier": "pro", "channel": "email"}},
+  {"id": 11, "text": "asdf can someone help thing broken idk what happened", "metadata": {"customer_tier": "free", "channel": "chat"}},
+  {"id": 12, "text": "We'd like to request a bulk export feature for compliance reporting, is that on the roadmap?", "metadata": {"customer_tier": "enterprise", "channel": "email"}}
 ]

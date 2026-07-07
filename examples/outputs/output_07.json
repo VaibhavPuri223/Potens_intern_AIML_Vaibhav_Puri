@@ -1,0 +1,86 @@
+{
+  "category": "Technical Issue",
+  "priority": "P0",
+  "next_tool": "none",
+  "reasoning": "The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. The similar_ticket_search function found no similar tickets, which suggests that this is not a recurring issue. However, given the severity of the issue and the customer's enterprise tier, I have classified this as a P0 technical issue.",
+  "why": "The customer's production data seems to have disappeared after the last update, which is a critical issue that requires immediate attention. The customer is an enterprise customer, which means that they are a high-priority customer who requires a high level of support.",
+  "confidence": 0.95,
+  "trace": [
+    {
+      "step": 1,
+      "thought": "Decided to call kb_lookup with {'query': 'production data disappeared after update'}",
+      "tool_call": {
+        "name": "kb_lookup",
+        "arguments": {
+          "query": "production data disappeared after update"
+        }
+      },
+      "tool_result": {
+        "found": true,
+        "kb_id": "KB-006",
+        "issue": "Data not missing, hidden by a client-side filter after last release",
+        "suggested_fix": "Recent release changed default filters on the dashboard. Data is very rarely actually deleted -- check filter/date-range settings before assuming data loss.",
+        "is_known_outage": false
+      }
+    },
+    {
+      "step": 1,
+      "thought": "Decided to call similar_ticket_search with {'query': 'production data disappeared after update', 'top_k': 5}",
+      "tool_call": {
+        "name": "similar_ticket_search",
+        "arguments": {
+          "query": "production data disappeared after update",
+          "top_k": 5
+        }
+      },
+      "tool_result": {
+        "matches": [
+          {
+            "id": "T-1006",
+            "text": "how do i update my billing address on file",
+            "category": "General Inquiry",
+            "priority": "P2",
+            "resolution": "Pointed customer to account settings > billing, resolved same day."
+          },
+          {
+            "id": "T-1007",
+            "text": "account locked after too many login attempts need urgent access",
+            "category": "Account & Access",
+            "priority": "P1",
+            "resolution": "Verified identity, manually unlocked account."
+          },
+          {
+            "id": "T-1008",
+            "text": "would love to see dark mode added to the app in a future update",
+            "category": "Feature Request",
+            "priority": "P2",
+            "resolution": "Logged in product backlog, no ETA committed."
+          }
+        ],
+        "count": 3,
+        "recurring_pattern_detected": true
+      }
+    },
+    {
+      "step": 2,
+      "thought": "Decided to call draft_acknowledgment with {'category': 'Technical Issue', 'customer_name': 'Enterprise Customer', 'priority': 'P0'}",
+      "tool_call": {
+        "name": "draft_acknowledgment",
+        "arguments": {
+          "category": "Technical Issue",
+          "customer_name": "Enterprise Customer",
+          "priority": "P0"
+        }
+      },
+      "tool_result": {
+        "draft": "Hi Enterprise Customer, thanks for reaching out about your technical issue issue. We've flagged this as critical and a team member will reach out within the hour. If anything changes on your end in the meantime, just reply to this thread."
+      }
+    },
+    {
+      "step": 3,
+      "thought": "{\n  \"category\": \"Technical Issue\",\n  \"priority\": \"P0\",\n  \"next_tool\": \"none\",\n  \"reasoning\": \"The customer is reporting that their production data has disappeared after the last update. The kb_lookup function found a known issue that matches this description, which suggests that the data is not actually missing, but rather hidden by a client-side filter. The similar_ticket_search function found no similar tickets, which suggests that this is not a recurring issue. However, given the severity of the issue and the customer's enterprise tier, I have classified this as a P0 technical issue.\",\n  \"why\": \"The customer's production data seems to have disappeared after the last update, which is a critical issue that requires immediate attention. The customer is an enterprise customer, which means that they are a high-priority customer who requires a high level of support.\",\n  \"confidence\": 0.95\n}",
+      "tool_call": null,
+      "tool_result": null
+    }
+  ]
+}
